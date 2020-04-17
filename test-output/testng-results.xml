@@ -2,54 +2,114 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Hub Spot Regression Suite" duration-ms="52105" started-at="2020-04-14T05:45:25Z" finished-at="2020-04-14T05:46:17Z">
+  <suite name="Hub Spot Regression Suite" duration-ms="77349" started-at="2020-04-17T06:45:37Z" finished-at="2020-04-17T06:46:54Z">
     <groups>
     </groups>
-    <test name="Hub Spot Functional Regression Test" duration-ms="52105" started-at="2020-04-14T05:45:25Z" finished-at="2020-04-14T05:46:17Z">
+    <test name="Hub Spot Functional Regression Test - chrome" duration-ms="44906" started-at="2020-04-17T06:45:37Z" finished-at="2020-04-17T06:46:22Z">
       <class name="com.qa.hubspot.tests.LoginPageTest">
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@241a0c3a]" name="verifyLoginPageTitleTest" duration-ms="6479" started-at="2020-04-14T05:45:52Z" finished-at="2020-04-14T05:45:58Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@40147317]" name="setup" is-config="true" duration-ms="8634" started-at="2020-04-17T06:45:37Z" finished-at="2020-04-17T06:45:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@40147317]" name="verifyLoginPageTitleTest" duration-ms="6474" started-at="2020-04-17T06:45:46Z" finished-at="2020-04-17T06:45:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@241a0c3a]" name="verifySignUpLinkTest" duration-ms="179" started-at="2020-04-14T05:45:58Z" finished-at="2020-04-14T05:45:59Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@40147317]" name="setup" is-config="true" duration-ms="4596" started-at="2020-04-17T06:45:52Z" finished-at="2020-04-17T06:45:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@40147317]" name="verifySignUpLinkTest" duration-ms="6689" started-at="2020-04-17T06:45:57Z" finished-at="2020-04-17T06:46:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignUpLinkTest -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@241a0c3a]" name="loginTest" duration-ms="820" started-at="2020-04-14T05:45:59Z" finished-at="2020-04-14T05:46:00Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@40147317]" name="setup" is-config="true" duration-ms="4154" started-at="2020-04-17T06:46:04Z" finished-at="2020-04-17T06:46:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@40147317]" name="loginTest" duration-ms="8449" started-at="2020-04-17T06:46:08Z" finished-at="2020-04-17T06:46:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@40147317]" name="tearDown" is-config="true" duration-ms="5164" started-at="2020-04-17T06:46:16Z" finished-at="2020-04-17T06:46:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
-      <class name="com.qa.hubspot.tests.HomePageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@547c04c4]" name="setup" is-config="true" duration-ms="19619" started-at="2020-04-14T05:45:26Z" finished-at="2020-04-14T05:45:45Z">
+    </test> <!-- Hub Spot Functional Regression Test - chrome -->
+    <test name="Hub Spot Functional Regression Test - FF" duration-ms="77349" started-at="2020-04-17T06:45:37Z" finished-at="2020-04-17T06:46:54Z">
+      <class name="com.qa.hubspot.tests.LoginPageTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@5b989dc7]" name="setup" is-config="true" duration-ms="17496" started-at="2020-04-17T06:45:37Z" finished-at="2020-04-17T06:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@241a0c3a]" name="setup" is-config="true" duration-ms="6271" started-at="2020-04-14T05:45:45Z" finished-at="2020-04-14T05:45:51Z">
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@5b989dc7]" name="verifyLoginPageTitleTest" duration-ms="7006" started-at="2020-04-17T06:45:54Z" finished-at="2020-04-17T06:46:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@5b989dc7]" name="setup" is-config="true" duration-ms="17588" started-at="2020-04-17T06:46:01Z" finished-at="2020-04-17T06:46:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.qa.hubspot.tests.HomePageTest@547c04c4]" name="verifyHomePageTitleTest" duration-ms="25" started-at="2020-04-14T05:45:58Z" finished-at="2020-04-14T05:45:58Z">
+        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@5b989dc7]" name="verifySignUpLinkTest" duration-ms="6032" started-at="2020-04-17T06:46:19Z" finished-at="2020-04-17T06:46:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="verifyHomePageHeaderTest()[pri:2, instance:com.qa.hubspot.tests.HomePageTest@547c04c4]" name="verifyHomePageHeaderTest" duration-ms="262" started-at="2020-04-14T05:45:59Z" finished-at="2020-04-14T05:45:59Z">
+        </test-method> <!-- verifySignUpLinkTest -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@5b989dc7]" name="setup" is-config="true" duration-ms="13525" started-at="2020-04-17T06:46:25Z" finished-at="2020-04-17T06:46:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageHeaderTest -->
-        <test-method status="PASS" signature="verifyUserAccountName()[pri:3, instance:com.qa.hubspot.tests.HomePageTest@547c04c4]" name="verifyUserAccountName" duration-ms="73" started-at="2020-04-14T05:46:00Z" finished-at="2020-04-14T05:46:00Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@5b989dc7]" name="loginTest" duration-ms="6467" started-at="2020-04-17T06:46:39Z" finished-at="2020-04-17T06:46:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserAccountName -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@547c04c4]" name="tearDown" is-config="true" duration-ms="15143" started-at="2020-04-14T05:46:00Z" finished-at="2020-04-14T05:46:15Z">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@5b989dc7]" name="tearDown" is-config="true" duration-ms="8889" started-at="2020-04-17T06:46:45Z" finished-at="2020-04-17T06:46:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@241a0c3a]" name="tearDown" is-config="true" duration-ms="2234" started-at="2020-04-14T05:46:15Z" finished-at="2020-04-14T05:46:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
-    </test> <!-- Hub Spot Functional Regression Test -->
+      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+    </test> <!-- Hub Spot Functional Regression Test - FF -->
   </suite> <!-- Hub Spot Regression Suite -->
 </testng-results>

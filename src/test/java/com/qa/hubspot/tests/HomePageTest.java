@@ -14,8 +14,15 @@ import com.qa.hubspot.page.LoginPage;
 import com.qa.hubspot.util.AppConstants;
 import com.qa.hubspot.util.Credentials;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 
-public class HomePageTest {
+	@Epic("Epic - 102 : create Home page features")
+	@Feature("US - 502 : create test for Home page on hubspot")
+	public class HomePageTest {
 	
 	BasePage basePage; 
 	Properties prop;
@@ -38,6 +45,8 @@ public class HomePageTest {
 	}
 	
 		@Test(priority=1)
+		@Description("Verify home page title test ...")
+		@Severity(SeverityLevel.NORMAL)
 		public void verifyHomePageTitleTest(){
 			String title = homePage.getHomePageTitle();
 			System.out.println("Home page title is: " + title );
@@ -45,6 +54,8 @@ public class HomePageTest {
 		}
 		
 		@Test(priority=2)
+		@Description("Verify home page header test ...")
+		@Severity(SeverityLevel.NORMAL)
 		public void verifyHomePageHeaderTest(){
 			String header = homePage.getHomePageHeader();
 			System.out.println("Home page Header is: " +  header);
@@ -52,6 +63,8 @@ public class HomePageTest {
 		}
 		
 		@Test(priority=3)
+		@Description("Verify User account name test ...")
+		@Severity(SeverityLevel.CRITICAL)
 		public void verifyUserAccountName(){
 			String accountname = homePage.getUserAccountName();
 			System.out.println("Login Account name is: " + accountname);

@@ -15,6 +15,7 @@ public class LoginPage extends BasePage {
 	JavaScriptUtil jsUtil;
 	//1. Create Locators: By
 	
+	
 	By emailID = By.id("username");
 	By psw = By.id("password");
 	By loginbtn = By.id("loginBtn");

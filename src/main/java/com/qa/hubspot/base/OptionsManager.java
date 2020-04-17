@@ -5,7 +5,7 @@ import java.util.Properties;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-public class OptionsManager {
+	public class OptionsManager {
 
 	public ChromeOptions co;
 	public FirefoxOptions fo;
