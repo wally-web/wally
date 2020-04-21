@@ -11,7 +11,6 @@ import java.util.Date;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -21,7 +20,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.qa.hubspot.base.BasePage;
 
 	public class ExtentReportListener extends BasePage implements ITestListener {
-
+ 
 	private static final String OUTPUT_FOLDER = "./build/";
 	private static final String FILE_NAME = "TestExecutionReport.html";
 
