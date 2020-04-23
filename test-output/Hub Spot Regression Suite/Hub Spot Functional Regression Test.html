@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Hub Spot Functional Regression Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 16 16:56:26 EDT 2020</td>
+<td>Started on:</td><td>Tue Apr 21 17:51:38 EDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>151 seconds (151185 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1059 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,68 +67,151 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.hubspot.tests.ContactsPageTest.VerifyContactsPageTitle()'><b>VerifyContactsPageTitle</b><br>Test class: com.qa.hubspot.tests.ContactsPageTest</td>
-<td></td>
-<td>1</td>
-<td>com.qa.hubspot.tests.ContactsPageTest@aed0151</td></tr>
+<td title='com.qa.hubspot.tests.LoginPageTest.setup()'><b>setup</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in C:\Users\wail\workspace\2020POMSeries\src\test\resources\testrunners\testng_regression.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17808347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17808347'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in C:\Users\wail\workspace\2020POMSeries\src\test\resources\testrunners\testng_regression.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.hubspot.tests.LoginPageTest@4f449e8f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.qa.hubspot.tests.ContactsPageTest.createContactsTest()'><b>createContactsTest</b><br>Test class: com.qa.hubspot.tests.ContactsPageTest<br>Parameters: wally@gmail.com, veron, vyron, manager</td>
-<td></td>
-<td>5</td>
-<td>com.qa.hubspot.tests.ContactsPageTest@aed0151</td></tr>
-<tr>
-<td title='com.qa.hubspot.tests.ContactsPageTest.createContactsTest()'><b>createContactsTest</b><br>Test class: com.qa.hubspot.tests.ContactsPageTest<br>Parameters: tom@gmail.com, hans, leon, QA</td>
-<td></td>
-<td>5</td>
-<td>com.qa.hubspot.tests.ContactsPageTest@aed0151</td></tr>
-<tr>
-<td title='com.qa.hubspot.tests.ContactsPageTest.createContactsTest()'><b>createContactsTest</b><br>Test class: com.qa.hubspot.tests.ContactsPageTest<br>Parameters: rony@gmail.com, rony, tara, CEO</td>
-<td></td>
-<td>5</td>
-<td>com.qa.hubspot.tests.ContactsPageTest@aed0151</td></tr>
-<tr>
-<td title='com.qa.hubspot.tests.ContactsPageTest.createContactsTest()'><b>createContactsTest</b><br>Test class: com.qa.hubspot.tests.ContactsPageTest<br>Parameters: james@gmail.com, james, robenson, QA tester</td>
-<td></td>
-<td>7</td>
-<td>com.qa.hubspot.tests.ContactsPageTest@aed0151</td></tr>
-<tr>
-<td title='com.qa.hubspot.tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
-<td></td>
-<td>1</td>
-<td>com.qa.hubspot.tests.LoginPageTest@5a4c638d</td></tr>
-<tr>
-<td title='com.qa.hubspot.tests.HomePageTest.verifyHomePageHeaderTest()'><b>verifyHomePageHeaderTest</b><br>Test class: com.qa.hubspot.tests.HomePageTest</td>
+<td title='com.qa.hubspot.tests.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.HomePageTest@13e698c7</td></tr>
-<tr>
-<td title='com.qa.hubspot.tests.HomePageTest.verifyHomePageTitleTest()'><b>verifyHomePageTitleTest</b><br>Test class: com.qa.hubspot.tests.HomePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.hubspot.tests.HomePageTest@13e698c7</td></tr>
+<td>com.qa.hubspot.tests.LoginPageTest@4f449e8f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='com.qa.hubspot.tests.LoginPageTest.verifyLoginPageTitleTest()'><b>verifyLoginPageTitleTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
-<td></td>
-<td>6</td>
-<td>com.qa.hubspot.tests.LoginPageTest@5a4c638d</td></tr>
-<tr>
-<td title='com.qa.hubspot.tests.LoginPageTest.verifySignUpLinkTest()'><b>verifySignUpLinkTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
-<td></td>
+<td><div><pre>java.lang.NullPointerException
+	at com.qa.hubspot.base.BasePage.getScreenshot(BasePage.java:94)
+	at com.qa.hubspot.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:108)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace985032587", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace985032587'><pre>java.lang.NullPointerException
+	at com.qa.hubspot.base.BasePage.getScreenshot(BasePage.java:94)
+	at com.qa.hubspot.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:108)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:529)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.LoginPageTest@5a4c638d</td></tr>
+<td>com.qa.hubspot.tests.LoginPageTest@4f449e8f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.qa.hubspot.tests.HomePageTest.verifyUserAccountName()'><b>verifyUserAccountName</b><br>Test class: com.qa.hubspot.tests.HomePageTest</td>
-<td></td>
+<td title='com.qa.hubspot.tests.LoginPageTest.verifyLoginPageTitleTest()'><b>verifyLoginPageTitleTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in C:\Users\wail\workspace\2020POMSeries\src\test\resources\testrunners\testng_regression.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2056277810", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2056277810'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in C:\Users\wail\workspace\2020POMSeries\src\test\resources\testrunners\testng_regression.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.HomePageTest@13e698c7</td></tr>
+<td>com.qa.hubspot.tests.LoginPageTest@4f449e8f</td></tr>
 </table><p>
 </body>
 </html>

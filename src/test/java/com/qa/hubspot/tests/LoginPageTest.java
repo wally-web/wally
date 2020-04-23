@@ -11,7 +11,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.beust.jcommander.Parameter;
+import com.beust.jcommander.Parameter; 
 import com.qa.hubspot.base.BasePage;
 import com.qa.hubspot.page.HomePage;
 import com.qa.hubspot.page.LoginPage;
@@ -24,7 +24,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
  
-
+ 
 	@Epic("Epic - 101 : create login page features")
 	@Feature("US - 501 : create test for login page on hubspot")
 	public class LoginPageTest {
@@ -33,7 +33,7 @@ import io.qameta.allure.SeverityLevel;
 	WebDriver driver;
 	LoginPage loginPage;
 	Credentials userCred;
-	
+	  
 	@BeforeMethod(alwaysRun = true)
 	@Parameters(value={"browser"})
 	public void setup(String browser){
