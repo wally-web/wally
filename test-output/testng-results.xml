@@ -1,13 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Hub Spot Regression Suite" duration-ms="231230" started-at="2020-04-23T07:00:42Z" finished-at="2020-04-23T07:04:33Z">
+  <suite name="Hub Spot Regression Suite" duration-ms="223189" started-at="2020-05-28T17:59:55Z" finished-at="2020-05-28T18:03:38Z">
     <groups>
     </groups>
-    <test name="Hub Spot Functional Regression Test - chrome" duration-ms="65121" started-at="2020-04-23T07:00:42Z" finished-at="2020-04-23T07:01:47Z">
+    <test name="Hub Spot Functional Regression Test - chrome" duration-ms="142537" started-at="2020-05-28T17:59:55Z" finished-at="2020-05-28T18:02:17Z">
       <class name="com.qa.hubspot.tests.LoginPageTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@2e1792e7]" name="setup" is-config="true" duration-ms="11243" started-at="2020-04-23T07:00:44Z" finished-at="2020-04-23T07:00:55Z">
+        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@d4ce346]" name="setup" is-config="true" duration-ms="41450" started-at="2020-05-28T17:59:55Z" finished-at="2020-05-28T18:00:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WAIL', ip: '10.15.125.32', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WAIL', ip: '10.15.125.32', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at com.qa.hubspot.base.BasePage.init_driver(BasePage.java:43)
+at com.qa.hubspot.tests.LoginPageTest.setup(LoginPageTest.java:51)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:41192/status] to be available after 20002 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+... 26 more
+Caused by: java.util.concurrent.TimeoutException
+at java.util.concurrent.FutureTask.get(Unknown Source)
+at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@d4ce346]" name="setup" is-config="true" duration-ms="63128" started-at="2020-05-28T18:00:39Z" finished-at="2020-05-28T18:01:42Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +80,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@2e1792e7]" name="verifyLoginPageTitleTest" duration-ms="6458" started-at="2020-04-23T07:00:56Z" finished-at="2020-04-23T07:01:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@2e1792e7]" name="setup" is-config="true" duration-ms="4488" started-at="2020-04-23T07:01:02Z" finished-at="2020-04-23T07:01:07Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@d4ce346]" name="setup" is-config="true" duration-ms="17978" started-at="2020-05-28T18:01:49Z" finished-at="2020-05-28T18:02:07Z">
           <params>
             <param index="0">
               <value>
@@ -33,34 +91,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@2e1792e7]" name="verifySignUpLinkTest" duration-ms="5554" started-at="2020-04-23T07:01:07Z" finished-at="2020-04-23T07:01:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySignUpLinkTest -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@2e1792e7]" name="setup" is-config="true" duration-ms="4020" started-at="2020-04-23T07:01:12Z" finished-at="2020-04-23T07:01:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@2e1792e7]" name="loginTest" duration-ms="7588" started-at="2020-04-23T07:01:16Z" finished-at="2020-04-23T07:01:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@2e1792e7]" name="tearDown" is-config="true" duration-ms="23509" started-at="2020-04-23T07:01:24Z" finished-at="2020-04-23T07:01:47Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@d4ce346]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-05-28T18:02:17Z" finished-at="2020-05-28T18:02:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
     </test> <!-- Hub Spot Functional Regression Test - chrome -->
-    <test name="Hub Spot Functional Regression Test - FF" duration-ms="231230" started-at="2020-04-23T07:00:42Z" finished-at="2020-04-23T07:04:33Z">
+    <test name="Hub Spot Functional Regression Test - FF" duration-ms="223189" started-at="2020-05-28T17:59:55Z" finished-at="2020-05-28T18:03:38Z">
       <class name="com.qa.hubspot.tests.LoginPageTest">
-        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@19f040ba]" name="setup" is-config="true" duration-ms="72767" started-at="2020-04-23T07:00:44Z" finished-at="2020-04-23T07:01:57Z">
+        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@23fee93a]" name="setup" is-config="true" duration-ms="97042" started-at="2020-05-28T17:59:55Z" finished-at="2020-05-28T18:01:32Z">
           <params>
             <param index="0">
               <value>
@@ -72,14 +111,14 @@
             <message>
               <![CDATA[connection refused
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WAIL', ip: '192.168.1.152', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
+System info: host: 'WAIL', ip: '10.15.125.32', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
 Driver info: driver.version: FirefoxDriver
 remote stacktrace: ]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: connection refused
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WAIL', ip: '192.168.1.152', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
+System info: host: 'WAIL', ip: '10.15.125.32', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
 Driver info: driver.version: FirefoxDriver
 remote stacktrace: 
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -130,7 +169,7 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@19f040ba]" name="setup" is-config="true" duration-ms="47548" started-at="2020-04-23T07:01:57Z" finished-at="2020-04-23T07:02:44Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@23fee93a]" name="setup" is-config="true" duration-ms="89668" started-at="2020-05-28T18:01:33Z" finished-at="2020-05-28T18:03:02Z">
           <params>
             <param index="0">
               <value>
@@ -141,7 +180,7 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@19f040ba]" name="setup" is-config="true" duration-ms="101306" started-at="2020-04-23T07:02:50Z" finished-at="2020-04-23T07:04:31Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@23fee93a]" name="setup" is-config="true" duration-ms="24425" started-at="2020-05-28T18:03:10Z" finished-at="2020-05-28T18:03:34Z">
           <params>
             <param index="0">
               <value>
@@ -149,69 +188,10 @@ at java.lang.Thread.run(Unknown Source)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[connection refused
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WAIL', ip: '192.168.1.152', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: ]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: connection refused
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WAIL', ip: '192.168.1.152', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: 
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at com.qa.hubspot.base.BasePage.init_driver(BasePage.java:50)
-at com.qa.hubspot.tests.LoginPageTest.setup(LoginPageTest.java:51)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@19f040ba]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-04-23T07:04:33Z" finished-at="2020-04-23T07:04:33Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@23fee93a]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-05-28T18:03:38Z" finished-at="2020-05-28T18:03:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

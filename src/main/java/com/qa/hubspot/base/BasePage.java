@@ -17,8 +17,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions; 
 import org.openqa.selenium.safari.SafariDriver; 
 import io.github.bonigarcia.wdm.WebDriverManager;
- 
- 
+  
+  
 	public class BasePage {
 
 	//public WebDriver driver;

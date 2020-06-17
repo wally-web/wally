@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 23 03:00:42 EDT 2020</td>
+<td>Started on:</td><td>Thu May 28 13:59:55 EDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>231 seconds (231230 ms)</td>
+<tr><td>Total time:</td><td>223 seconds (223189 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,68 +75,49 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.hubspot.tests.LoginPageTest.setup()'><b>setup</b><br>Test class: com.qa.hubspot.tests.LoginPageTest<br>Parameters: firefox</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: connection refused
+<td title='com.qa.hubspot.tests.LoginPageTest.setup()'><b>setup</b><br>Test class: com.qa.hubspot.tests.LoginPageTest<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WAIL&apos;, ip: &apos;192.168.1.152&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: 
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+System info: host: &apos;WAIL&apos;, ip: &apos;10.15.125.32&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at com.qa.hubspot.base.BasePage.init_driver(BasePage.java:50)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.qa.hubspot.base.BasePage.init_driver(BasePage.java:43)
 	at com.qa.hubspot.tests.LoginPageTest.setup(LoginPageTest.java:51)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1934870713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1934870713'><pre>org.openqa.selenium.TimeoutException: connection refused
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:41192/status] to be available after 20002 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+	... 26 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 27 more
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace958011457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace958011457'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WAIL&apos;, ip: &apos;192.168.1.152&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: 
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+System info: host: &apos;WAIL&apos;, ip: &apos;10.15.125.32&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at com.qa.hubspot.base.BasePage.init_driver(BasePage.java:50)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.qa.hubspot.base.BasePage.init_driver(BasePage.java:43)
 	at com.qa.hubspot.tests.LoginPageTest.setup(LoginPageTest.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -154,14 +135,23 @@ remote stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:41192/status] to be available after 20002 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+	... 26 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 27 more
 </pre></div></td>
-<td>72</td>
-<td>com.qa.hubspot.tests.LoginPageTest@19f040ba</td></tr>
+<td>41</td>
+<td>com.qa.hubspot.tests.LoginPageTest@d4ce346</td></tr>
 <tr>
 <td title='com.qa.hubspot.tests.LoginPageTest.setup()'><b>setup</b><br>Test class: com.qa.hubspot.tests.LoginPageTest<br>Parameters: firefox</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: connection refused
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WAIL&apos;, ip: &apos;192.168.1.152&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;WAIL&apos;, ip: &apos;10.15.125.32&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: driver.version: FirefoxDriver
 remote stacktrace: 
 	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
@@ -189,10 +179,10 @@ remote stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2098690822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2098690822'><pre>org.openqa.selenium.TimeoutException: connection refused
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2134328697", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2134328697'><pre>org.openqa.selenium.TimeoutException: connection refused
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WAIL&apos;, ip: &apos;192.168.1.152&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;WAIL&apos;, ip: &apos;10.15.125.32&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: driver.version: FirefoxDriver
 remote stacktrace: 
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -238,8 +228,8 @@ remote stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>101</td>
-<td>com.qa.hubspot.tests.LoginPageTest@19f040ba</td></tr>
+<td>97</td>
+<td>com.qa.hubspot.tests.LoginPageTest@23fee93a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -252,7 +242,12 @@ remote stacktrace:
 <td title='com.qa.hubspot.tests.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.LoginPageTest@19f040ba</td></tr>
+<td>com.qa.hubspot.tests.LoginPageTest@d4ce346</td></tr>
+<tr>
+<td title='com.qa.hubspot.tests.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.hubspot.tests.LoginPageTest@23fee93a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -264,15 +259,13 @@ remote stacktrace:
 <tr>
 <td title='com.qa.hubspot.tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
 <td><div><pre>java.lang.NullPointerException
-	at com.qa.hubspot.base.BasePage.getScreenshot(BasePage.java:94)
-	at com.qa.hubspot.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:108)
+	at com.qa.hubspot.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:115)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace713285685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace713285685'><pre>java.lang.NullPointerException
-	at com.qa.hubspot.base.BasePage.getScreenshot(BasePage.java:94)
-	at com.qa.hubspot.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:108)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace388781691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace388781691'><pre>java.lang.NullPointerException
+	at com.qa.hubspot.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:115)
 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
 	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
@@ -285,20 +278,20 @@ remote stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>103</td>
-<td>com.qa.hubspot.tests.LoginPageTest@19f040ba</td></tr>
+<td>27</td>
+<td>com.qa.hubspot.tests.LoginPageTest@23fee93a</td></tr>
 <tr>
 <td title='com.qa.hubspot.tests.LoginPageTest.verifyLoginPageTitleTest()'><b>verifyLoginPageTitleTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
 <td><div><pre>java.lang.NullPointerException
 	at com.qa.hubspot.base.BasePage.getScreenshot(BasePage.java:94)
-	at com.qa.hubspot.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:108)
+	at com.qa.hubspot.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:116)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace658853455", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace658853455'><pre>java.lang.NullPointerException
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace527420471", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace527420471'><pre>java.lang.NullPointerException
 	at com.qa.hubspot.base.BasePage.getScreenshot(BasePage.java:94)
-	at com.qa.hubspot.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:108)
+	at com.qa.hubspot.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:116)
 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
 	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
@@ -311,18 +304,18 @@ remote stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>72</td>
-<td>com.qa.hubspot.tests.LoginPageTest@19f040ba</td></tr>
+<td>97</td>
+<td>com.qa.hubspot.tests.LoginPageTest@23fee93a</td></tr>
 <tr>
 <td title='com.qa.hubspot.tests.LoginPageTest.verifySignUpLinkTest()'><b>verifySignUpLinkTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
 <td><div><pre>java.lang.NullPointerException
-	at com.qa.hubspot.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:107)
+	at com.qa.hubspot.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:115)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1967681595", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1967681595'><pre>java.lang.NullPointerException
-	at com.qa.hubspot.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:107)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1471633657", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1471633657'><pre>java.lang.NullPointerException
+	at com.qa.hubspot.listeners.ExtentReportListener.onTestSkipped(ExtentReportListener.java:115)
 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:61)
 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
 	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1063)
@@ -335,8 +328,8 @@ remote stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>52</td>
-<td>com.qa.hubspot.tests.LoginPageTest@19f040ba</td></tr>
+<td>94</td>
+<td>com.qa.hubspot.tests.LoginPageTest@23fee93a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -349,7 +342,7 @@ remote stacktrace:
 <td title='com.qa.hubspot.tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: connection refused
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WAIL&apos;, ip: &apos;192.168.1.152&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;WAIL&apos;, ip: &apos;10.15.125.32&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: driver.version: FirefoxDriver
 remote stacktrace: 
 	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
@@ -377,10 +370,10 @@ remote stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace752515215", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace752515215'><pre>org.openqa.selenium.TimeoutException: connection refused
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1516261700", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1516261700'><pre>org.openqa.selenium.TimeoutException: connection refused
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WAIL&apos;, ip: &apos;192.168.1.152&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;WAIL&apos;, ip: &apos;10.15.125.32&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: driver.version: FirefoxDriver
 remote stacktrace: 
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -427,12 +420,12 @@ remote stacktrace:
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.LoginPageTest@19f040ba</td></tr>
+<td>com.qa.hubspot.tests.LoginPageTest@23fee93a</td></tr>
 <tr>
 <td title='com.qa.hubspot.tests.LoginPageTest.verifyLoginPageTitleTest()'><b>verifyLoginPageTitleTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: connection refused
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WAIL&apos;, ip: &apos;192.168.1.152&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;WAIL&apos;, ip: &apos;10.15.125.32&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: driver.version: FirefoxDriver
 remote stacktrace: 
 	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
@@ -460,10 +453,10 @@ remote stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace435005289", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace435005289'><pre>org.openqa.selenium.TimeoutException: connection refused
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1574045366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1574045366'><pre>org.openqa.selenium.TimeoutException: connection refused
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WAIL&apos;, ip: &apos;192.168.1.152&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;WAIL&apos;, ip: &apos;10.15.125.32&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: driver.version: FirefoxDriver
 remote stacktrace: 
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -510,12 +503,12 @@ remote stacktrace:
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.LoginPageTest@19f040ba</td></tr>
+<td>com.qa.hubspot.tests.LoginPageTest@23fee93a</td></tr>
 <tr>
 <td title='com.qa.hubspot.tests.LoginPageTest.verifySignUpLinkTest()'><b>verifySignUpLinkTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: connection refused
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WAIL&apos;, ip: &apos;192.168.1.152&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;WAIL&apos;, ip: &apos;10.15.125.32&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: driver.version: FirefoxDriver
 remote stacktrace: 
 	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
@@ -543,10 +536,10 @@ remote stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace349676845", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace349676845'><pre>org.openqa.selenium.TimeoutException: connection refused
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace518310555", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace518310555'><pre>org.openqa.selenium.TimeoutException: connection refused
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WAIL&apos;, ip: &apos;192.168.1.152&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;WAIL&apos;, ip: &apos;10.15.125.32&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: driver.version: FirefoxDriver
 remote stacktrace: 
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -593,7 +586,7 @@ remote stacktrace:
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.LoginPageTest@19f040ba</td></tr>
+<td>com.qa.hubspot.tests.LoginPageTest@23fee93a</td></tr>
 </table><p>
 </body>
 </html>

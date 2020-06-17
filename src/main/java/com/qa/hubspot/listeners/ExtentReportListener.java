@@ -1,5 +1,8 @@
 package com.qa.hubspot.listeners;
 
+
+
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -8,9 +11,14 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -19,8 +27,8 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.qa.hubspot.base.BasePage;
 
-	public class ExtentReportListener extends BasePage implements ITestListener {
- 
+public class ExtentReportListener extends BasePage implements ITestListener {
+
 	private static final String OUTPUT_FOLDER = "./build/";
 	private static final String FILE_NAME = "TestExecutionReport.html";
 
@@ -123,10 +131,13 @@ import com.qa.hubspot.base.BasePage;
 		return calendar.getTime();
 	}
 
-
-
-	
-
 	
 
 }
+
+
+
+	
+
+	
+

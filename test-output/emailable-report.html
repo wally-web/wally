@@ -9,19 +9,45 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Hub Spot Regression Suite</th></tr>
-<tr><td><a href="#t0">Hub Spot Functional Regression Test - chrome</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">65,121</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Hub Spot Functional Regression Test - FF</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">231,230</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num">296,351</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Hub Spot Functional Regression Test - chrome</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">142,537</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Hub Spot Functional Regression Test - FF</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">223,189</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">365,726</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Hub Spot Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Hub Spot Functional Regression Test - chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m0">loginTest</a></td><td rowspan="1">1587625276783</td><td rowspan="1">7588</td></tr><tr class="passedeven"><td><a href="#m1">verifyLoginPageTitleTest</a></td><td rowspan="1">1587625256047</td><td rowspan="1">6458</td></tr><tr class="passedeven"><td><a href="#m2">verifySignUpLinkTest</a></td><td rowspan="1">1587625267196</td><td rowspan="1">5554</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Hub Spot Functional Regression Test - FF &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m3">setup</a></td><td rowspan="2">1587625370466</td><td rowspan="2">101306</td></tr><tr class="failedeven"><td><a href="#m4">setup</a></td></tr><tr><th colspan="4">Hub Spot Functional Regression Test - FF &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m5">tearDown</a></td><td rowspan="1">1587625473993</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Hub Spot Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Hub Spot Functional Regression Test - chrome &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1590688795632</td><td rowspan="1">41450</td></tr><tr><th colspan="4">Hub Spot Functional Regression Test - chrome &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1590688937556</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Hub Spot Functional Regression Test - FF &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m2">setup</a></td><td rowspan="1">1590688795632</td><td rowspan="1">97042</td></tr><tr><th colspan="4">Hub Spot Functional Regression Test - FF &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m3">tearDown</a></td><td rowspan="1">1590689018203</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Hub Spot Functional Regression Test - chrome</h2><h3 id="m0">com.qa.hubspot.tests.LoginPageTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.hubspot.tests.LoginPageTest#verifyLoginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.qa.hubspot.tests.LoginPageTest#verifySignUpLinkTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Hub Spot Functional Regression Test - FF</h2><h3 id="m3">com.qa.hubspot.tests.LoginPageTest#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: connection refused
+<h2>Hub Spot Functional Regression Test - chrome</h2><h3 id="m0">com.qa.hubspot.tests.LoginPageTest#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WAIL&apos;, ip: &apos;192.168.1.152&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;WAIL&apos;, ip: &apos;10.15.125.32&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.qa.hubspot.base.BasePage.init_driver(BasePage.java:43)
+	at com.qa.hubspot.tests.LoginPageTest.setup(LoginPageTest.java:51)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:41192/status] to be available after 20002 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+	... 26 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 27 more
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.hubspot.tests.LoginPageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Hub Spot Functional Regression Test - FF</h2><h3 id="m2">com.qa.hubspot.tests.LoginPageTest#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: connection refused
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WAIL&apos;, ip: &apos;10.15.125.32&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: driver.version: FirefoxDriver
 remote stacktrace: 
 	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
@@ -50,37 +76,6 @@ remote stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 ... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.qa.hubspot.tests.LoginPageTest#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: connection refused
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WAIL&apos;, ip: &apos;192.168.1.152&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: 
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at com.qa.hubspot.base.BasePage.init_driver(BasePage.java:50)
-	at com.qa.hubspot.tests.LoginPageTest.setup(LoginPageTest.java:51)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.qa.hubspot.tests.LoginPageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.hubspot.tests.LoginPageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
